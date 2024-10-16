@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>本音変換機</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>本音変換機</h1>
+            <textarea
+                id="inputText"
+                placeholder="テキストを入力してください..."
+                oninput="convertText()"
+            ></textarea>
+            <div class="button-container">
+                <button onclick="clearText()">クリア</button>
+            </div>
+            <div id="outputText" class="output"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
